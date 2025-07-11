@@ -1,6 +1,7 @@
 import sys
 import os
 import tempfile
+import shutil
 
 class MinHeap:
   def __init__(self):
@@ -155,7 +156,8 @@ def main():
   num_runs = len(runs)
 
   resultado_final, num_passes = intercalar_arquivos(runs, p)
-  os.replace(resultado_final, saida)
+  shutil.copy(resultado_final, saida)
+  os.remove(resultado_final)
 
   print("#Regs Ways #Runs #Parses")
   print(f"{total} {p} {num_runs} {num_passes}")
