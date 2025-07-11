@@ -1,0 +1,11 @@
+# Arquivo de configuração para o Gitpod
+
+tasks:
+  init: |
+    echo "Ambiente pronto!"
+  command: |
+
+# Configuração do editor para abrir o arquivo principal
+vscode:
+  extensions:
+    - ms-python.python
