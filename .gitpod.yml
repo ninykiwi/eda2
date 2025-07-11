@@ -2,7 +2,6 @@ tasks:
   - init: |
       # Nenhuma preparação necessária
     command: |
-      python3 pways.py 3 input.txt output.txt
 
 vscode:
   extensions:
