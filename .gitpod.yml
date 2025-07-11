@@ -1,11 +1,9 @@
-# Arquivo de configuração para o Gitpod
-
 tasks:
-  init: |
-    echo "Ambiente pronto!"
-  command: |
+  - init: |
+      # Nenhuma preparação necessária
+    command: |
+      python3 pways.py 3 input.txt output.txt
 
-# Configuração do editor para abrir o arquivo principal
 vscode:
   extensions:
     - ms-python.python
